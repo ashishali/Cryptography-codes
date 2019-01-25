@@ -9,7 +9,7 @@ def encryption(msg,key):
     if (c.isupper()):
       cipher += chr((ord(c)+key-20) % 46+20)
     else:
-      cipher += chr((ord(c)+key-72) % 26+65)
+      cipher += chr((ord(c)+key-72) % 26+72)
   return cipher
 
 #msg="hi"
