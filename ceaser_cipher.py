@@ -7,9 +7,9 @@ def encryption(msg,key):
   for i in range(len(msg)):
     c = msg[i]
     if (c.isupper()):
-      cipher += chr((ord(c)+key-20) % 46+20)
+      cipher += chr((ord(c)+key-65) % 26+65)
     else:
-      cipher += chr((ord(c)+key-72) % 26+72)
+      cipher += chr((ord(c)+key-97) % 26+97)
   return cipher
 
 #msg="hi"
