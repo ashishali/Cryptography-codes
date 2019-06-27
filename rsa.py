@@ -1,6 +1,6 @@
-import sympy
-import random
-import gmpy2
+import sympy #package for selecting random prime number
+import random #package that helps in selecting a random number
+import gmpy2 #package that helps in validating whether the number is prime or not
 
 p = sympy.randprime(1000,5000)
 q = sympy.randprime(1000,5000)
